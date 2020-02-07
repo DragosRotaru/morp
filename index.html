@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="index.js"></script>
+    <style>
+      body {
+        display: flex;
+        flex-direction: row;
+      }
+      #controls {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <canvas
+        id="pattern"
+        width="1000"
+        height="1000"
+        style="border:1px solid #c3c3c3;"
+      >
+        Your browser does not support the canvas element.
+      </canvas>
+
+      <div id="controls">
+        <h2>Controls</h2>
+        <label for="volume">Radius</label>
+        <input type="range" id="radius" name="radius" min="10" max="500" />
+        <label for="volume">Mouse Sensitivity</label>
+        <input
+          type="range"
+          id="mouse-sensitivity"
+          name="mouse sensitivity"
+          min="0"
+          max="6"
+          value="1"
+          step="any"
+        />
+      </div>
+    </div>
+  </body>
+</html>
